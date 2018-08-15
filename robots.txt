@@ -1,0 +1,8 @@
+User-agent: * 
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+Sitemap: http://communityfolks.com/sitemap.xml
+Sitemap: https://communityfolks.com/sitemap.xml
+Sitemap: http://www.communityfolks.com/sitemap.xml
+Sitemap: https://www.communityfolks.com/sitemap.xml
