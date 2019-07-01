@@ -7642,7 +7642,8 @@ header {
       .ftco-fixed .image {
         width: 50%; } }
   .ftco-fixed .page-container {
-    padding: 30px; }
+    padding: 0 30px;
+    margin-top: 56px; }
   .ftco-fixed .page-container-no-gutters {
     padding: 0; }
 
