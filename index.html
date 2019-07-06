@@ -17,8 +17,19 @@
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/mobile.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script>
+    $(function() {
+    $(document).click(function (event) {
+    $('.navbar-collapse').collapse('hide');
+      });
+    });
+    </script>
 
 
+
+ 
 </head>
 
 <body>
@@ -26,12 +37,12 @@
         <a class="navbar-brand" href="https://communityfolks.com/index.html" id="brand-logo">
             <img src="images/logo.png" alt="Community Folks Logo" class="navbar-logo">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-collapse collapse">
             <ul class="navbar-nav mr-auto" id="right-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="https://communityfolks.com/index.html#serviceslink">BENEFITS</a>
@@ -42,6 +53,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="https://communityfolks.com/index.html#communitypedialink">COMMUNITYPEDIA</a>
                 </li>
+                
 
             </ul>
             <ul class="navbar-nav mr-auto" id="left-nav">
@@ -50,6 +62,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://www.facebook.com/groups/CommunityFolks/events/" target="_blank">EVENTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://communityfolks.com/blog/">BLOGS</a>
                 </li>
                 <!-- <li class="nav-item">
                             <a class="nav-link" href="#jobslink">JOBS</a>
@@ -549,7 +564,13 @@
 
         gtag('config', 'UA-117987580-1');
     </script>
-
+<script>
+      $(document).ready(function(){
+    $('html').animate({scrollTop:0}, 1);
+    $('body').animate({scrollTop:0}, 1);
+});
+    </script>
+   
 
 </body>
 

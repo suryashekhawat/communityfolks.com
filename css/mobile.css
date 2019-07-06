@@ -769,6 +769,9 @@
         color: #c3c3c3;
         text-align: center;
     }
+    .particles-js-canvas-el{
+        display: none;
+    }
     .our-brand {
         display: flex;
         flex-direction: column;
