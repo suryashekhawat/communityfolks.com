@@ -1,0 +1,135 @@
+.heading {
+  margin-bottom: 50px;
+}
+.heading h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#events-page {
+  background-color: #673ab7;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+#events-page .event-section {
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #673ab7;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+@media screen and (max-width: 499px) {
+  #events-page .event-section {
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+}
+#events-page .event-section .heading h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#events-page .event-section .heading p {
+  color: white;
+  text-align: center;
+}
+#events-page .event-section .event {
+  background-color: white;
+  padding-left: 0;
+  padding-right: 0;
+}
+#events-page .event-section .event .event-card {
+  background-color: white;
+  padding-bottom: 20px;
+}
+#events-page .event-section .event .event-card img {
+  width: 100%;
+  height: 300px;
+}
+#events-page .event-section .event .event-card-content {
+  padding: 25px;
+}
+#events-page .event-section .event .event-card-content .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#events-page .event-section .event .event-card-content .hosted-by {
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+  text-align: center;
+}
+#events-page .event-section .event .event-card-content .hosted-by .event-type {
+  color: black;
+  font-weight: bold;
+}
+#events-page .event-section .event .event-card-content .date {
+  font-size: 16px;
+  color: gray;
+  margin: 0;
+  text-align: center;
+}
+#events-page .event-section .event .event-card-content .location {
+  font-size: 13px;
+  color: gray;
+  margin: 0;
+  text-align: center;
+}
+#events-page .event-section .event .event-card-content .register {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+#events-page .event-section .event .event-card-content .register button {
+  text-transform: uppercase;
+}
+#events-page .event-section .event .event-card-content .event-details {
+  margin-top: 15px;
+  padding: 3px;
+  padding-top: 5px;
+  font-size: 14px;
+  color: #232020e3;
+}
+#events-page .event-section .event .event-card-content .agenda h1 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+#events-page .event-section .event .event-card-content .agenda ul {
+  padding: 0;
+  margin: 0;
+}
+#events-page .event-section .event .event-card-content .agenda ul li {
+  display: flex;
+  flex-direction: row;
+}
+#events-page .event-section .event .event-card-content .agenda ul li .time {
+  width: 30%;
+  font-weight: bold;
+  text-align: center;
+  color: #505050;
+}
+#events-page .event-section .event .event-card-content .agenda ul li .title {
+  font-size: 15px;
+  text-align: left;
+  font-weight: normal;
+  width: 70%;
+  text-transform: none;
+  color: #505050;
+}
+#events-page .event-section .event-small {
+  background-color: white;
+  height: 200px;
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
