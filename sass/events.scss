@@ -131,8 +131,27 @@
     }
     .event-small{
       background-color: white;
-      height: 200px;
+      min-height: 200px;
       margin: 5px;
+      .image{
+        img{
+          width: 100%;
+        }
+      }
+      .content{
+        padding-bottom: 12px;
+        .title{
+          font-size: 20px;
+          font-weight: bold;
+          margin-top: 5px;
+          margin-bottom: 5px;
+        }
+        .hosted-by, .date, .location{
+          margin: 0;
+          color: $gray-color;
+          font-size: 13px;
+        }
+      }
     }
   }
 

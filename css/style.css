@@ -128,8 +128,25 @@
 }
 #events-page .event-section .event-small {
   background-color: white;
-  height: 200px;
+  min-height: 200px;
   margin: 5px;
+}
+#events-page .event-section .event-small .image img {
+  width: 100%;
+}
+#events-page .event-section .event-small .content {
+  padding-bottom: 12px;
+}
+#events-page .event-section .event-small .content .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+#events-page .event-section .event-small .content .hosted-by, #events-page .event-section .event-small .content .date, #events-page .event-section .event-small .content .location {
+  margin: 0;
+  color: gray;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */
