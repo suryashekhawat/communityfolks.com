@@ -1,158 +1,113 @@
 #events-page{
-  background-color: $background-color;
+
   padding-top: 100px;
   padding-bottom: 150px;
-  .event-section {
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: $background-color;
+  color: white;
+  .heading{
+    color: white;
+  }
+  .events{
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
-    @media screen and (max-width: $mobile - 1){
-      padding-left: 1%;
-      padding-right: 1%;
-    }
-    .heading{
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: scroll;
+    max-width: 100%;
+    padding: 25px;
 
-      h1{
-        text-align: center;
-        color: white;
-        font-weight: bold;
-        margin-top: 25px;
-        margin-bottom: 25px;
-      }
-      p{
-        color: white;
-        text-align: center;
-      }
+    &::-webkit-scrollbar {
+      width: 10px;
     }
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #421e56;
+      border-radius: 10%
+    }
+
     .event{
-      background-color: $event-card-color;
-      padding-left: 0;
-      padding-right: 0;
-      .event-card{
-        background-color: $event-card-color;
-        // padding-top: 20px;
-        padding-bottom: 20px;
-
-          img{
-            width: 100%;
-            height: 300px;
-          }
-
-      }
-      .event-card-content{
-        padding: 25px;
-        .title{
-          font-size: 20px;
-          font-weight: bold;
-          margin: 0;
-          margin-bottom: 15px;
-          text-align: center;
-
-        }
-        .hosted-by{
-          font-size: 13px;
-          color: $gray-color;
-          margin: 0;
-          text-align: center;
-          .event-type{
-            color: black;
-            font-weight: bold;
-          }
-        }
-        .date{
-          font-size: 16px;
-          color: $gray-color;
-          margin: 0;
-          text-align: center;
-
-        }
-        .location{
-          font-size: 13px;
-          color: $gray-color;
-          margin: 0;
-          text-align: center;
-
-        }
-        .register{
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          margin-top: 25px;
-          margin-bottom: 25px;
-          button{
-            text-transform: uppercase;
-          }
-        }
-
-        .event-details{
-          margin-top: 15px;
-          padding: 3px;
-          padding-top: 5px;
-          font-size: 14px;
-          color: $event-details-color;
-        }
-
-        .agenda{
-          h1{
-            font-size: 18px;
-            text-transform: uppercase;
-          }
-          ul{
-            padding: 0;
-            margin: 0;
-            li{
-              display: flex;
-              flex-direction: row;
-              .time{
-                width: 30%;
-                font-weight: bold;
-                text-align: center;
-                color: #505050;
-              }
-              .title{
-                font-size: 15px;
-                text-align: left;
-                font-weight: normal;
-                width: 70%;
-                text-transform: none;
-                color: #505050;
-              }
-
-            }
-          }
-        }
-
-
-      }
-    }
-    .event-small{
+      min-width:350px;
+      // height: 340px;
       background-color: white;
-      min-height: 200px;
-      margin: 5px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 5px;
       .image{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         img{
           width: 100%;
+          height: 196px;
+          border-radius: 5px;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+
         }
       }
+
+      .communityfolks{
+        background-color: yellow;
+        height: 50px;
+        width: 100%;
+      }
       .content{
-        padding-bottom: 12px;
-        .title{
+        padding: 10px;
+        color: black;
+        h1{
           font-size: 20px;
-          font-weight: bold;
-          margin-top: 5px;
+          margin-bottom: 5px;
+
+        }
+        p{
+          font-size: 15px;
           margin-bottom: 5px;
         }
-        .hosted-by, .date, .location{
-          margin: 0;
-          color: $gray-color;
-          font-size: 13px;
+        .info{
+          display: flex;
+          flex-direction: row;
+          justify-content:space-between;
+          align-items: center;
+          padding-top: 5px;
+          .loc{
+            width: 50%;
+            text-align: left;
+          }
+          .date{
+            width: 50%;
+            text-align: right;
+          }
         }
+
+      }
+
+    }
+
+  }
+  .more-events{
+    padding: 25px;
+    background-color: #ffffffc4;
+    margin-top: 25px;
+    .heading{
+      color: black;
+    }
+    .for-members{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 30%;
+      padding-right: 30%;
+      color: black;
+      margin-top: 80px;
+      h1{
+        font-size: 15px;
+        text-transform: uppercase;
+        // font-weight: bold;
       }
     }
   }
-
 }
