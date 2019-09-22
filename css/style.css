@@ -1,7 +1,5 @@
 body {
   background-color: #673ab7;
-  background-image: url("../images/background.png");
-  background-size: 100% 100%;
 }
 
 .heading {
@@ -11,6 +9,56 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 10px;
+}
+
+.main-banner {
+  height: 500px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.main-banner img {
+  width: 100%;
+}
+.main-banner .subscribe-form {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.main-banner .subscribe-form .text {
+  width: 30%;
+  color: white;
+  padding: 10px;
+}
+.main-banner .subscribe-form .text h1 {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+.main-banner .subscribe-form .text p {
+  font-size: 12px;
+  margin: 0;
+}
+.main-banner .subscribe-form .content {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+.main-banner .subscribe-form .content .for-members {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 25px;
+}
+.main-banner .subscribe-form .content .for-members .form-control {
+  margin-right: 10px;
+  border-radius: 0px;
 }
 
 #events-page {

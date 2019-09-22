@@ -1,3 +1,55 @@
+.main-banner{
+  height: 500px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  img{
+    width: 100%;
+
+  }
+  .subscribe-form{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    .text{
+      width: 30%;
+      color: white;
+      h1{
+        font-size: 15px;
+        font-weight: bold;
+        margin: 0;
+      }
+      p{
+        font-size: 12px;
+        margin: 0;
+      }
+      padding: 10px;
+    }
+
+    .content{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        .for-members{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 25px;
+          .form-control{
+            margin-right: 10px;
+            border-radius: 0px;
+          }
+        }
+    }
+  }
+
+}
 #events-page{
 
   padding-top: 100px;
@@ -6,6 +58,7 @@
   .heading{
     color: white;
   }
+
   .events{
     display: flex;
     flex-direction: row;
